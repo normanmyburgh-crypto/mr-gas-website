@@ -342,9 +342,16 @@ section {
 
 .about-values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     margin-top: 48px;
+}
+
+/* Mobile responsiveness for values */
+@media (max-width: 968px) {
+    .about-values {
+        grid-template-columns: 1fr;
+    }
 }
 
 .value-item {
